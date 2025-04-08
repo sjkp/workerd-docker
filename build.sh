@@ -9,4 +9,4 @@ if [ -z "$WORKERD_VERSION" ]; then
 fi
 
 # build docker image for arm64 and amd64
-docker buildx build --build-arg WORKERD_VERSION=$WORKERD_VERSION --platform linux/arm64,linux/amd64 -t jacoblincool/workerd:$WORKERD_VERSION -t jacoblincool/workerd:latest --push .
+docker buildx build --build-arg WORKERD_VERSION=$WORKERD_VERSION --platform linux/arm64,linux/amd64 -t ghcr.io/sjkp/workerd:$WORKERD_VERSION -t ghcr.io/sjkp/workerd:latest --push .
